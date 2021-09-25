@@ -1,0 +1,32 @@
+h1.main-heading {
+  text-align: center;
+  color: #000;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.img-item {margin: 5px;}
+
+.img-item img { 
+  width: 100%;
+  height: auto;
+  border: 1px solid #0000003b;
+}
+
+.img-item img:hover {
+  box-shadow: 20px 20px 30px -10px #192824;
+  -moz-box-shadow: 20px 20px 30px -10px #192824;
+  -webkit-box-shadow: 20px 20px 30px -10px #192824;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Media devices CSS */
+@media(max-width:767px) {
+  .container {justify-content: space-around;}
+}
